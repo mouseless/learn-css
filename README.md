@@ -4,8 +4,8 @@
 
 Learning how to use scss styles in html pages.
 
-### Generate `css` File
+### Using `scss` in Html Page
 
-Since html pages accept `.css` format as a style, we used the `sass` module to
-convert the scss file to css. We gave the created `.css` file to the html page
-with a link.
+When we use [Sass](https://sass-lang.com/), we prefer Scss syntax. For Css,
+we convert Scss to Css with Sass. We prefer to install `npm` instead of `brew`
+or `choco` to have a simple single run file. We use `npx sass` for convenience.
