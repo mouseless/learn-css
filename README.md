@@ -2,6 +2,8 @@
 
 ## learn-sass
 
+Learning how to use scss styles in html pages.
+
 ### Generate `css` File
 
 Since html pages accept `.css` format as a style, we used the `sass` module to
