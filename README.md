@@ -1,3 +1,3 @@
 # learn-css
 
-## lean-sass
+## learn-sass
