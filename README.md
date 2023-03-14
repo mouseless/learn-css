@@ -12,4 +12,5 @@ or `choco` to have a simple single run file. We use `npx sass` for convenience.
 
 ### Using Variables
 
-Document how to use variables in scss file...
+We used it to make it easier to specify, control and standardize the site's
+colors and fonts.
