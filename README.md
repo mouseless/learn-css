@@ -26,3 +26,9 @@ into a single file with `@import`. We convert the file to css and use it. See
 
 We use it because it helps us to see and manage hierarchy. See
 [nested.scss](sass/nested.scss) for an example usage.
+
+#### Using Ampersand
+
+We using ampersand in the nested structure, when styling the behavior of the
+parent or child. See
+[nested-ampersand.scss](sass/nested-ampersand.scss)
