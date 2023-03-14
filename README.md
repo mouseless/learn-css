@@ -29,5 +29,5 @@ We use it because it helps us to see and manage hierarchy. See
 
 #### Using Ampersand
 
-We using ampersand in the nested structure, when styling the behavior of the parent or child. See
+You can use `&` where appropriate. See
 [nested-ampersand.scss](sass/nested-ampersand.scss)
