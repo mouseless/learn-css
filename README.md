@@ -12,5 +12,5 @@ or `choco` to have a simple single run file. We use `npx sass` for convenience.
 
 ### Using Variables
 
-We used it to make it easier to specify, control and standardize the site's
-colors and fonts.
+We use variables to make it easier to apply the theme's colors and fonts and
+to improve readability.
