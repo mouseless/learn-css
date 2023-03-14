@@ -1,0 +1,8 @@
+.demo {
+  .nested-ampersand {
+    background-color: rgb(66, 255, 249);
+    &:hover {
+      background-color: rgb(194, 75, 15);
+    }
+  }
+}

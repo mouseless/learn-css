@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "prestart": "npx sass style.scss css/style.css",
+    "start": "npx http-server . -p 3000"
+  }
+}
