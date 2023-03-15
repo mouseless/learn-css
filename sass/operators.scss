@@ -1,7 +1,11 @@
-.demo .operators {
-    background-color: rgb(66, 255, 249);
-}
+$operator-font-size: 16px;
 
-.demo .operators:hover {
-    height: 25px + 25px;
+.demo {
+    .operators {
+        margin-top: $global-margin-top;
+        font-size: $operator-font-size;
+        &:hover {
+            font-size: $operator-font-size + 3px;
+        }
+    }
 }
