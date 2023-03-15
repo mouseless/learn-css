@@ -31,3 +31,9 @@ We use it because it helps us to see and manage hierarchy. See
 
 You can use `&` where appropriate. See
 [nested-ampersand.scss](sass/nested-ampersand.scss)
+
+### Using Operators
+
+We use operators to calculate a new value based on a property. For example, we
+calculate the new value by increasing/decreasing the height of the element we
+give style. See [style.scss](sass/style.scss) for an example usage.

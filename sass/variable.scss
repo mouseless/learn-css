@@ -1,5 +1,5 @@
-$demo-variable: rgb(66, 255, 249);
+$variable: fantasy;
 
 .demo .variable {
-  background-color: $demo-variable;
+  font-family: $variable;
 }
