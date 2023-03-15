@@ -1,3 +1,11 @@
 @import 'nested-ampersand';
 @import 'nested';
 @import 'variable';
+@import 'operators';
+
+.demo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
