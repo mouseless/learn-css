@@ -13,13 +13,24 @@ or `choco` to have a simple single run file. We use `npx sass` for convenience.
 ### Using Variables
 
 We use variables so that applying theme and reading code becomes more
-convenient. See [variables.scss](sass/variables.scss) for an example usage.
+convenient. See [variable.scss](sass/variable.scss) for an example usage.
 
 ### Using Modules
 
 We use modules to keep the styles of parts that make sense on their own (these
 can be components, classes, etc.) in a unique file. We combine `.scss` files
 into a single file with `@import`. We convert the file to css and use it. See
-[style.scss](sass/style.scss) for an combine example usage.
+[style.scss](sass/style.scss) for combine example usage.
+
+### Nesting
+
+We use it because it helps us to see and manage hierarchy. See
+[nested.scss](sass/nested.scss) for an example usage.
+
+#### Using Ampersand
+
+You can use `&` where appropriate. See
+[nested-ampersand.scss](sass/nested-ampersand.scss)
+
 
 ### Using Operators
