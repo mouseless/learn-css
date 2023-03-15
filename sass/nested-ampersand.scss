@@ -1,8 +1,5 @@
-.demo {
-    .nested-ampersand {
-        margin-top: $global-margin-top;
-        &:hover {
-            background-color: rgb(194, 75, 15);
-        }
-    }
+.demo .nested {
+  &-ampersand {
+    background-color: rgb(143, 194, 15);
+  }
 }

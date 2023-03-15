@@ -1,11 +1,7 @@
-$operator-font-size: 16px;
+$default-font-size: 16px;
 
 .demo {
     .operators {
-        margin-top: $global-margin-top;
-        font-size: $operator-font-size;
-        &:hover {
-            font-size: $operator-font-size + 3px;
-        }
+        font-size: $default-font-size * 1.5;
     }
 }
