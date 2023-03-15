@@ -41,4 +41,7 @@ give style. See [style.scss](sass/style.scss) for an example usage.
 ### Watch
 
 When we use `--watch`, we instantly reflect the change we made in `style.scss`
-file. There is no need to generate `css` again for each change.
+file. There is no need to generate `css` again for each change. See
+`sass/pacakage.json` for our implementation.
+
+> We used `concurrently` module for server and watch to work in parallel.
