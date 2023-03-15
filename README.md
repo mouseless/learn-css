@@ -37,3 +37,8 @@ You can use `&` where appropriate. See
 We use operators to calculate a new value based on a property. For example, we
 calculate the new value by increasing/decreasing the height of the element we
 give style. See [style.scss](sass/style.scss) for an example usage.
+
+### Watch
+
+When we use `--watch`, we instantly reflect the change we made in `style.scss`
+file. There is no need to generate `css` again for each change.
