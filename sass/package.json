@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "start": "concurrently \"npx sass --watch style.scss css/style.css\" \"npx http-server . -p 3000\""
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
