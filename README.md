@@ -45,3 +45,7 @@ file. There is no need to generate `css` again for each change. See
 `sass/pacakage.json` for our implementation.
 
 > We used `concurrently` module for server and watch to work in parallel.
+
+### `:deep` Selector
+
+...
