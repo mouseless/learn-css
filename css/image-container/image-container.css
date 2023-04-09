@@ -1,5 +1,24 @@
-.image-container {
+:root {
+    --image-padding: 10px;
+}
+
+.image-container-fixed {
     width: 400px;
     height: 400px;
     background-color: brown;
+    container-type: size;
+    container-name: image-container-fixed;
+}
+
+.image-container-fixed img {
+    width: 100%;
+    height: 100%;
+}
+
+@container image-container-fixed (min-width:1px) {
+    img.padding-10 {
+        padding: var(--image-padding);
+        width: calc(100cqw - (var(--image-padding) * 2));
+        height: calc(100cqh - (var(--image-padding) * 2));
+    }
 }
