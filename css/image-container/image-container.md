@@ -1,10 +1,10 @@
 ## Image-Container
 
-Sometimes we need to use containers for displaying images in html, for
-properly positioning and limiting their dimensions. We can provide certain 
-width and height to the image, but for every variation of container we need 
-to specify the dimensions and which may result excessive repetition of css 
-styles.
+Sometimes we need to use containers for displaying images in html, in order 
+to properly position and limit their dimensions. We can provide certain 
+width and height to the image, but for every variation of a container, 
+we need to specify the dimensions which may result excessive 
+repetition of css code.
 
 
 ### Fixed Size Container
@@ -18,18 +18,21 @@ If we have a fixed sized container we can use full width and height.
 }
 ```
 
-With this way, the image fully fits inside the container, however the aspect 
-ratio of the image may be lost. We can use _object-fit_ property to overcome
-that issue. 
+With this way, the image fully matches the dimensions of the container, 
+however the aspect ratio of the image may be lost. We can alter the _object-fit_ 
+property to protect the aspect ratio to overcome that issue. 
 
 #### Margin/Padding Issue
-Another problem with this style is, if we want some margin or padding for the
-image, the image will shift inside the container. We can set padding of the 
-parent container but in some cases it may not be the best solution.
 
-There way to solve this problem is to use ```@container``` queries. Those 
+A problem occurs with this approach is, if we want some margin or padding for 
+the image, the image will shift inside the container. We can set padding of the 
+parent container and reduce its size accordingly but in some cases it may 
+not be the best solution.
+
+A way to solve this problem is to use ```@container``` queries. Those 
 queries can provide size information about a html element. If we get the size
-of the container, we can calculate the necessary size and margin for the image
+of the container, we can calculate the necessary dimensions and margin for the 
+image to achieve the visual we need.
 
 ```css
 @container image-container-fixed (min-width:1px) {
@@ -48,11 +51,11 @@ we want to use.
 ### Variable Size Container
 
 Using an image inside a variable size containers such as flex or grid needs a 
-different approachthan the fixed size container. If we simply use full width or 
+different approach than the fixed size container. If we simply use full width or 
 height, we may see the container expanding fully to match the size of the child
 image.
 
-In order to prevent this, we should prevent the overflow.
+In order to overcome this, we should prevent the overflow of the container.
 
 ```css
 .grid .grid-item {
@@ -61,6 +64,6 @@ In order to prevent this, we should prevent the overflow.
 ```
 
 By preventing the overflow, the container will no longer grow to match the
-image size and we can use the full width and height.
+image size and than we can use the full width and height.
 
 
