@@ -18,18 +18,18 @@ If we have a fixed sized container we can use full width and height.
 }
 ```
 
-With this way, the image fully matches the dimensions of the container, 
+This way, the image fully matches the dimensions of the container, 
 however the aspect ratio of the image may be lost. We can alter the _object-fit_ 
-property to protect the aspect ratio to overcome that issue. 
+property to protect the aspect ratio to overcome this issue. 
 
 #### Margin/Padding Issue
 
-A problem occurs with this approach is, if we want some margin or padding for 
+A problem that occurs with this approach is, if we want some margin or padding for 
 the image, the image will shift inside the container. We can set padding of the 
 parent container and reduce its size accordingly but in some cases it may 
 not be the best solution.
 
-A way to solve this problem is to use ```@container``` queries. Those 
+A way to solve this problem is to use ```@container``` queries. These 
 queries can provide size information about a html element. If we get the size
 of the container, we can calculate the necessary dimensions and margin for the 
 image to achieve the visual we need.
@@ -65,5 +65,7 @@ In order to overcome this, we should prevent the overflow of the container.
 
 By preventing the overflow, the container will no longer grow to match the
 image size and than we can use the full width and height.
+
+
 
 
