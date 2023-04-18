@@ -1,0 +1,8 @@
+sass/css/
+node_modules
+bin
+obj
+
+*.*
+!*.css
+!*.scss

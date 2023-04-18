@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "lint": "npx stylelint ."
+  },
+  "devDependencies": {
+    "stylelint-config-standard": "^33.0.0"
+  }
+}
