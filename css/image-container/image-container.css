@@ -1,88 +1,88 @@
 :root {
-    --image-padding: 10px;
+  --image-padding: 10px;
 }
 
 h3 {
-    font-size: 20px;
-    margin: 5px 0;
+  font-size: 20px;
+  margin: 5px 0;
 }
 
 body {
-    height: 100vh;
-    margin: 0;
-    padding: 0;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 .page {
-    display: grid;
-    grid-template-rows: 90vh 10vh;
-    margin: auto;
+  display: grid;
+  grid-template-rows: 90vh 10vh;
+  margin: auto;
 }
 
 .footer {
-    background-color: black;
+  background-color: black;
 }
 
 
 .row {
-    display: flex;
-    height: 100%;
-    justify-self: flex-start;
+  display: flex;
+  height: 100%;
+  justify-self: flex-start;
 }
 
 .column {
-    flex: 1px;
-    height: 100%;
-    margin-left: 20px;
-    min-width: 450px;
+  flex: 1px;
+  height: 100%;
+  margin-left: 20px;
+  min-width: 450px;
 }
 
 .image-container-fixed {
-    width: 400px;
-    height: 400px;
-    background-color: brown;
-    container-type: size;
-    container-name: image-container-fixed;
+  width: 400px;
+  height: 400px;
+  background-color: brown;
+  container-type: size;
+  container-name: image-container-fixed;
 }
 
 .image-container-fixed img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 @container image-container-fixed (min-width:1px) {
-    img.padding-10 {
-        padding: var(--image-padding);
-        width: calc(100cqw - (var(--image-padding) * 2));
-        height: calc(100cqh - (var(--image-padding) * 2));
-    }
+  img.padding-10 {
+    padding: var(--image-padding);
+    width: calc(100cqw - (var(--image-padding) * 2));
+    height: calc(100cqh - (var(--image-padding) * 2));
+  }
 }
 
 .grid-container {
-    display: grid;
-    grid-template-rows: 33px 300px 1fr 100px 1fr;
-    height: 100%;
+  display: grid;
+  grid-template-rows: 33px 300px 1fr 100px 1fr;
+  height: 100%;
 }
 
 .grid-container>*:not(h3) {
-    overflow: hidden;
-    border: 1px solid black;
-    padding: 10px;
+  overflow: hidden;
+  border: 1px solid black;
+  padding: 10px;
 }
 
 .image-container-variable {
-    background-color: lightgray;
+  background-color: lightgray;
 }
 
 .image-container-variable img {
-    height: 100%;
-    object-fit: scale-down;
+  height: 100%;
+  object-fit: scale-down;
 }
 
 .image-container-variable:has(img.center) {
-    text-align: center;
+  text-align: center;
 }
 
 .image-container-variable:has(img.right) {
-    text-align: end;
+  text-align: end;
 }

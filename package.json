@@ -3,6 +3,7 @@
     "lint": "npx stylelint ."
   },
   "devDependencies": {
-    "stylelint-config-standard": "^33.0.0"
+    "stylelint-config-standard": "^33.0.0",
+    "stylelint-config-standard-scss": "^8.0.0"
   }
 }
