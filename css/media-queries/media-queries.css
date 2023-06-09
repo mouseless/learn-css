@@ -1,0 +1,47 @@
+:root {
+  --page-l: 1920px;
+  --page-m: 1280px;
+  --page-s: 800px;
+}
+
+header, article {
+  width: var(--page-l);
+  margin: auto;
+  padding: 2em 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1920px /* --page-l */) {
+  header, article {
+    width: var(--page-m);
+    padding: 1em 0;
+  }
+
+  header .logo {
+    height: 40px !important;
+  }
+}
+
+@media (max-width: 1280px /* --page-m */) {
+  header, article {
+    width: var(--page-s);
+  }
+
+  header .logo {
+    height: 25px !important;
+  }
+}
+
+@media (max-width: 800px /* --page-s */) {
+  header, article {
+    width: 90%;
+  }
+
+  header .logo {
+    height: 15px !important;
+  }
+
+  article {
+    font-size: smaller;
+  }
+}
