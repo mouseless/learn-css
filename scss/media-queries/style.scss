@@ -1,0 +1,45 @@
+$page-l: 1920px;
+$page-m: 1280px;
+$page-s: 800px;
+
+header, article {
+  width: $page-l;
+  margin: auto;
+  padding: 2em 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: $page-l) {
+  header, article {
+    width: $page-m;
+    padding: 1em 0;
+  }
+
+  header .logo {
+    height: 40px !important;
+  }
+}
+
+@media (max-width: $page-m) {
+  header, article {
+    width: $page-s;
+  }
+
+  header .logo {
+    height: 25px !important;
+  }
+}
+
+@media (max-width: $page-s) {
+  header, article {
+    width: 90%;
+  }
+
+  header .logo {
+    height: 15px !important;
+  }
+
+  article {
+    font-size: smaller;
+  }
+}
