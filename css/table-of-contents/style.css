@@ -1,0 +1,57 @@
+body {
+  width: 600px;
+  margin: auto;
+  display: grid;
+  grid-template-areas:
+      "top top"
+      "side content";
+  grid-template-columns: 150px 1fr;
+}
+
+header {
+  grid-area: top;
+  text-align: center;
+  position: sticky;
+  align-self: start;
+  top: 0;
+  height: 75px;
+  background-color: white;
+  box-shadow: 0px 2px 2px white;
+}
+
+nav {
+  grid-area: side;
+  position: sticky;
+  align-self: start;
+  top: 75px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  color: red;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0.1em;
+  padding: 0.15em 0.5em;
+  border-radius: 2px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+nav ul li a.highlight {
+  background-color: pink;
+}
+
+article {
+  grid-area: content;
+  font-size: 20px;
+}
+
+article h1, article h2 {
+  scroll-margin-top: 75px;
+}
