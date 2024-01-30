@@ -5,7 +5,6 @@ properly position and limit their dimensions. We can provide certain width and
 height to the image, but for every variation of a container, we need to specify
 the dimensions which may result excessive repetition of css code.
 
-
 ## Fixed Size Container
 
 If we have a fixed sized container we can use full width and height.
