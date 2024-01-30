@@ -5,6 +5,7 @@
 Learning basic and advanced css usage to create versatile html styles.
 
 - [Image Container](css/image-container/README.md)
+- [BEM Methodology](css/bem-methodology/README.md)
 - [Media Queries](css/media-queries/README.md)
 - [Table of Contents](css/table-of-contents/README.md)
 
