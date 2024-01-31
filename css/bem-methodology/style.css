@@ -3,12 +3,31 @@
     flex-direction: column;
 }
 
-.form__entry {
+.form__title {
+    font-size: 2em;
+}
+
+.form__section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form__input {
     margin: 5px;
 }
 
-.form__entry_secret {
+.form__input_secret {
     -webkit-text-security: disc;
+}
+
+.form__hobbies {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hobbies__item {
+    font-weight: bold;
 }
 
 .form__save {
