@@ -107,5 +107,12 @@ recommends `Open/closed principle`. The `DRY("don't repeat yourself")` principle
 recommends not naming and using styles with the same function differently just
 because they are slightly different. See [Principles][principles] to see detail.
 
+## So what did BEM solve?
+
+- When we look at the code written with the Bem methodology, we can see that it
+  is self-documenting.
+- It makes it easy to see the hierarchical relationships within a block.
+- Makes it easy to give unique names
+
 [alternative-schemes]: https://en.bem.info/methodology/naming-convention/#alternative-naming-schemes
 [principles]: https://en.bem.info/methodology/css/#dividing-code-into-parts
