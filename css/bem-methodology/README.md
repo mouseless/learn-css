@@ -23,10 +23,31 @@ parts such as the car door, mirror, wheel, etc. Elements are named using snake
 case with the block name as a prefix, connected by two underscores. For example,
 `car__window`, `car__wheel`, etc.
 
+> :information_source:
+>
+> An element is always part of a block, not another element.
+
 ## Modifier
 
-The "M" in BEM stands for Modifier, representing the adjectives that qualify the
-block and element. Continuing with the car example, when we say "light-colored
-car" the "light-colored" part becomes our modifier. In naming, we again use
-snake case, connecting the modifier to the element or block with two dashes. For
-example, `car__window--open`.
+The "M" in BEM stands for Modifier, that defines the appearance, state, or
+behavior of a block or element. Continuing with the car example, when we say
+"light-colored car" the "light-colored" part becomes our modifier.The modifier
+name is separated from the block or element name by a single underscore For
+example, `car__window_open`.
+
+> :warning:
+>
+> A modifier can't be used in isolation from the modified block or element. A
+> modifier should change the appearance, behavior, or state of the entity, not
+> replace it.
+
+### Types of modifiers
+
+#### Boolean
+
+Used when only the presence or absence of the modifier is important, and its
+value is irrelevant. For example, `disabled`.
+
+#### Key-value
+
+Used when the modifier value is important. For example, `color_light`.
