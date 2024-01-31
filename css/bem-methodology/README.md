@@ -51,3 +51,61 @@ value is irrelevant. For example, `disabled`.
 #### Key-value
 
 Used when the modifier value is important. For example, `color_light`.
+
+### Alternative naming schemes
+
+BEM offers the use of a few more naming schemes as an alternative. One of them
+is described below. See [Alternative naming schemes][alternative-schemes] to see
+the others.
+
+> :tip:
+>
+> BEM says we can use our own naming conventions. As long as we can
+> programmatically distinguish between `Block`, `Element` and `Modifier`.
+
+#### Two Dashes style
+
+With this style, we separate the modifier with `--` and write the value
+separated by `-`.
+
+## Mix
+
+Mix is a solution to code that is duplicated because different elements with the
+same behavior are named differently. As a solution, it says to mix a block name
+that is universal with a block name in local and use it. It is explained below
+with the `car` example.
+
+```html
+<div class="car">
+    <div class="engine car__engine">
+    ...
+    </div>
+</div>
+```
+
+```css
+.engine {
+    /* describe engine */
+}
+
+.car__engine {
+    /* position or something like that */
+}
+```
+
+> :warning:
+>
+> When mixing, it is important not to bad use the suggestions provided by BEM. A
+> different class should not be given to an element/block out of context just
+> because it has the same styles.
+
+## Principles
+
+BEM advises us to follow a few principles. For more flexibility, BEM recommends
+the `Single responsibility principle`. For less change and complexity, it
+recommends `Open/closed principle`. The `DRY("don't repeat yourself")` principle
+recommends not naming and using styles with the same function differently just
+because they are slightly different. See [Principles][principles] to see detail.
+
+[alternative-schemes]: https://en.bem.info/methodology/naming-convention/#alternative-naming-schemes
+[principles]: https://en.bem.info/methodology/css/#dividing-code-into-parts
