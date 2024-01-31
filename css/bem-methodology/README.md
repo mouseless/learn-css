@@ -58,7 +58,7 @@ BEM offers the use of a few more naming schemes as an alternative. One of them
 is described below. See [Alternative naming schemes][alternative-schemes] to see
 the others.
 
-> :tip:
+> :bulb:
 >
 > BEM says we can use our own naming conventions. As long as we can
 > programmatically distinguish between `Block`, `Element` and `Modifier`.
