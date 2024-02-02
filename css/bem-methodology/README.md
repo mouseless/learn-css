@@ -45,10 +45,9 @@ Used when the modifier value is important. For example, `color_light`.
 
 ## Mix
 
-Mix is a solution to code that is duplicated because different elements with the
-same behavior are named differently. As a solution, it says to mix a block name
-that is universal with a block name in local and use it. It is explained below
-with the `car` example.
+We use Mix as a solution for duplicate code due to different elements with the
+same behavior being named differently. The solution is to mix a global block
+name with a local block name.
 
 ```html
 <div class="car">
