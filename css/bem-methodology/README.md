@@ -37,11 +37,12 @@ it with two hyphens. For example, `form__input--secret` for element.
 #### Boolean
 
 Used when only the presence or absence of the modifier is important, and its
-value is irrelevant. For example, `disabled`.
+value is irrelevant. For example, `form__input--disabled`.
 
 #### Key-value
 
-Used when the modifier value is important. For example, `color_light`.
+Used when the modifier value is important. For example,
+`form_input--color_light`.
 
 ## Mix
 
