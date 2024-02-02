@@ -1,12 +1,12 @@
 # BEM Methodology
 
-We prefer BEM(Block Element Modifier) for its legibility, self-documentation,
+We prefer BEM(Block Element Modifier) for its readability, self-documentation,
 common standard and flexibility.
 
 ## Block
 
-We give the block name to the outermost html element of a whole that is
-meaningful in its own right, representing a block that we have made or can make
+We give the block name to the outermost html element that makes sense in its
+context, representing a block that we have made or can make
 a separate component.
 
 ## Element
@@ -21,16 +21,17 @@ bind the prefix with two underscores. For example `form__input`.
 
 ## Modifier
 
-We use modifiers to specify special cases that indicate the state and position
-of html elements. When naming, if it is a block, we use the block name as a
-prefix and if it is an element, we use the element name as a prefix and connect
-it with two hyphens. For example, `form__input--secret` for element.
+With modifiers we change the appearance, state and behavior of blocks/elements,
+we do not define the blocks/elements themselves. That's why we use modifiers
+next to the block or element, not by themselves. When naming, if it is a block,
+we use the block name as a prefix and if it is an element, we use the element
+name as a prefix and connect it with two hyphens. For example,
+`form__input--secret` for element.
 
 > :warning:
 >
-> A modifier can't be used in isolation from the modified block or element. A
-> modifier should change the appearance, behavior, or state of the entity, not
-> replace it.
+> The modifier should not be used alone. The modifier should only modify
+> properties only in certain cases. It should not define the element by itself.
 
 ### Types of modifiers
 
