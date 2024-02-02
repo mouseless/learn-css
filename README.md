@@ -13,5 +13,6 @@ Learning basic and advanced css usage to create versatile html styles.
 
 Learning how to use scss styles in html pages.
 
+- [BEM Methodology](scss/bem-methodology/README.md)
 - [Scss Basics](scss/basics/README.md)
 - [Media Queries](scss/media-queries/README.md)
