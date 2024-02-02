@@ -17,7 +17,7 @@
     margin: 5px;
 }
 
-.form__input_secret {
+.form__input--secret {
     -webkit-text-security: disc;
 }
 
