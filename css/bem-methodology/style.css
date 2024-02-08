@@ -1,0 +1,41 @@
+.form {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.form__title {
+    font-size: 2em;
+}
+
+.form__section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form__input {
+    margin: 5px;
+}
+
+.form__input--secret {
+    -webkit-text-security: disc;
+}
+
+.form__hobbies {
+    margin: 5px 5px 7px 0px;
+}
+
+.form__save {
+    width: 60px;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.hobbies {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hobbies__item {
+    font-weight: bold;
+}
