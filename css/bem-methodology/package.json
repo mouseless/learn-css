@@ -1,5 +1,8 @@
 {
   "scripts": {
-    "start": "npx http-server . -p 3000"
+    "start": "npx vite"
+  },
+  "dependencies": {
+    "vite": "^6.1.0"
   }
 }
