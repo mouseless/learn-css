@@ -3,6 +3,7 @@
     "start": "vite"
   },
   "devDependencies": {
+    "sass-embedded": "^1.83.4",
     "vite": "^6.1.0"
   }
 }
