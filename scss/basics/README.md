@@ -15,7 +15,7 @@ convenient. See [variable.scss](sass/variable.scss) for an example usage.
 
 We use modules to keep the styles of parts that make sense on their own (these
 can be components, classes, etc.) in a unique file. We combine `.scss` files
-into a single file with `@import`. We convert the file to css and use it. See
+into a single file with `@use`. We convert the file to css and use it. See
 [style.scss](sass/style.scss) for combine example usage.
 
 ## Nesting
@@ -34,10 +34,8 @@ We use operators to calculate a new value based on a property. For example, we
 calculate the new value by increasing/decreasing the height of the element we
 give style. See [style.scss](sass/style.scss) for an example usage.
 
-## Watch
+## Vite
 
-When we use `--watch`, we instantly reflect the change we made in `style.scss`
-file. There is no need to generate `css` again for each change. See
-`sass/pacakage.json` for our implementation.
-
-> We used `concurrently` module for server and watch to work in parallel.
+We use vite in presentation because it reflects changes on the fly, making
+development easier, and provides direct sass support. But, you still need to add
+the `sass-embedded` package.

@@ -1,8 +1,12 @@
 {
   "scripts": {
-    "start": "concurrently \"npx sass --watch style.scss css/style.css\" \"npx http-server . -p 3000\""
+    "start": "vite"
   },
   "devDependencies": {
-    "concurrently": "^7.6.0"
+    "sass-embedded": "^1.83.4",
+    "vite": "^6.1.0"
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "^4.34.6"
   }
 }
